@@ -2,7 +2,7 @@
 
 This repository provides the official implementation of **LOREN**, a curvature-aware zeroth-order (ZO) optimization 
 method for efficient fine-tuning of LLMs. LOREN adaptively learns a **low-rank curvature preconditioner** and integrates 
-it with REINFORCE leave-one-out (RLOO)** estimator to **reduce variance**, achieving superior convergence, accuracy, and memory efficiency compared to existing ZO methods.
+it with REINFORCE leave-one-out (RLOO) estimator to **reduce variance**, achieving superior convergence, accuracy, and memory efficiency compared to existing ZO methods.
 
 > Accepted at **AAAI Conference on Artificial Intelligence (AAAI-26)**, Singapore, January 2026.  
 ---
@@ -16,12 +16,12 @@ local curvature. It combines:
 
 ### Performance Comparison
 <p align="center">
-  <img src="figures/gpt_qnli_acc.png" alt="GPT-2-XL QNLI" width="49.5%"/>
-  <img src="figures/opt13_cb_acc.png" alt="OPT-13B BoolQ" width="48%"/>
+  <img src="figures/gpt_qnli_acc.png" alt="GPT-2-XL QNLI" width="39.2%"/>
+  <img src="figures/opt13_cb_acc.png" alt="OPT-13B BoolQ" width="38%"/>
 </p>
 
 <p align="center">
-  (Left) GPT-2-XL fine-tuned on QNLI and (Right) OPT-13B fine-tuned on CB, using early stopping.
+  Figure 1: Test accuracy curves for GPT-2-XL fine-tuned on QNLI and OPT-13B fine-tuned on CB, using early stopping.
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@ local curvature. It combines:
 </p>
 
 <p align="center">
-  Training loss curves for different ZO optimizers when fine-tuning OPT-13B on SuperGLUE tasks.
+  Figure 2: Training loss curves for different ZO optimizers when fine-tuning OPT-13B on SuperGLUE (RTE, BoolQ, WiC, and CB) tasks.
 </p>
 
 ---
