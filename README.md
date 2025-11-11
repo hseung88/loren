@@ -14,7 +14,7 @@ local curvature. It combines:
 - **Rank-1 block-diagonal preconditioning** to encode curvature efficiently.  
 - **RLOO variance reduction** to stabilize and denoise gradient estimates.  
 
-### Performance Comparison
+### Benchmark Results
 <p align="center">
   <img src="figures/gpt_qnli_acc.png" alt="GPT-2-XL QNLI" width="39.2%"/>
   <img src="figures/opt13_cb_acc.png" alt="OPT-13B BoolQ" width="38%"/>
@@ -53,14 +53,14 @@ local curvature. It combines:
 **SuperGLUE:** `rte`, `boolq`, `wic`, `cb`
 
 ## Algorithms
-| Algorithm               | Description                                              | Reference                                                                                                                                                                                                |
-|:------------------------|:---------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ZO`         | Baseline SPSA-based ZO                                   | [Malladi et al., NeurIPS 2023, *Fine-Tuning Language Models with Just Forward Passes*](https://proceedings.neurips.cc/paper_files/paper/2023/file/a627810151be4d13f907ac898ff7e948-Paper-Conference.pdf) |
-| `ZOAdam` | MeZO with Adam's adaptive update                         |                                                                                                                                                                                                          |
-| `ZOSVRG`                | MeZO with stochastic variance-reduced gradients          | [Gautam et al., ICLR 2024, *Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models*](https://openreview.net/pdf?id=yc758jO4i5)                                                            |
-| `LOZO`                  | Low-rank ZO gradient estimator                           | [Chen et al., ICLR 2025, *Enhancing Zeroth-Order Fine-Tuning for Language Models with Low-Rank Structures*](https://openreview.net/pdf?id=9BiVepgmWW)                                                    |
-| `HiZOO`                 | Hessian informed ZO preconditioner                       | [Zhao et al., ICLR 2025, *Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer*](https://openreview.net/forum?id=bEqI61iBue)                                        |
-| `LOREN (ours)`          | Low-Rank curvature-aware ZO with RLOO variance reduction | Seung et al., AAAI 2026 *Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning*                                                                                                            |
+| Algorithm     | Description                                              | Reference                                                                                                                                                                                        |
+|:--------------|:---------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ZO`          | Baseline SPSA-based ZO                                   | [Malladi et al., 2023, *Fine-Tuning Language Models with Just Forward Passes*](https://proceedings.neurips.cc/paper_files/paper/2023/file/a627810151be4d13f907ac898ff7e948-Paper-Conference.pdf) |
+| `ZOAdam`      | MeZO with Adam's adaptive update                         |                                                                                                                                                                                                  |
+| `ZOSVRG`      | MeZO with stochastic variance-reduced gradients          | [Gautam et al., 2024, *Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models*](https://openreview.net/pdf?id=yc758jO4i5)                                                         |
+| `LOZO`        | Low-rank ZO gradient estimator                           | [Chen et al., 2025, *Enhancing Zeroth-Order Fine-Tuning for Language Models with Low-Rank Structures*](https://openreview.net/pdf?id=9BiVepgmWW)                                                 |
+| `HiZOO`       | Hessian informed ZO preconditioner                       | [Zhao et al., 2025, *Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer*](https://openreview.net/forum?id=bEqI61iBue)                                     |
+| `LOREN`(ours) | Low-Rank curvature-aware ZO with RLOO variance reduction | Seung et al., 2026, *Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning*                                                                                                        |
 
 ---
 
@@ -99,7 +99,7 @@ python main.py\
 ``` 
 @inproceedings{seung2026lowrank,
 title={Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-tuning},
-author={Hyunseok Seung and Jaewoo Lee and Hyunsuk Ko},
+author={Seung, Hyunseok and Lee, Jaewoo and Ko, Hyunsuk},
 booktitle={The Fortieth AAAI Conference on Artificial Intelligence},
 year={2026},
 }
