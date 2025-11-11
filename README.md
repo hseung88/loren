@@ -39,13 +39,13 @@ local curvature. It combines:
 
 ## Models
 
-| Family | Model |
-|:--|:--|
-| BERT | `distilbert-base-cased` |
-| RoBERTa | `roberta-large` |
-| GPT-2 | `gpt2-xl` |
-| OPT | `facebook/opt-2.7b`, `facebook/opt-13b` |
-| LLaMA | `meta-llama/Meta-Llama-3-8B` |
+| Family     | Model |
+|:-----------|:--|
+| DistilBERT | `distilbert-base-cased` |
+| RoBERTa    | `roberta-large` |
+| GPT        | `gpt2-xl` |
+| OPT        | `facebook/opt-2.7b`, `facebook/opt-13b` |
+| LLaMA      | `meta-llama/Meta-Llama-3-8B` |
 
 ## Tasks
 
