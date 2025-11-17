@@ -1,4 +1,4 @@
-# Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-tuning
+# Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning
 
 This repository provides the official implementation of **LOREN**, a curvature-aware zeroth-order (ZO) optimization 
 method for efficient fine-tuning of LLMs. LOREN adaptively learns a **low-rank curvature preconditioner** and integrates 
@@ -53,14 +53,14 @@ local curvature. It combines:
 **SuperGLUE:** `rte`, `boolq`, `wic`, `cb`
 
 ## Algorithms
-| Algorithm     | Description                                              | Reference                                                                                                                                                                                        |
-|:--------------|:---------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ZO`          | Baseline SPSA-based ZO                                   | [Malladi et al., 2023, *Fine-Tuning Language Models with Just Forward Passes*](https://proceedings.neurips.cc/paper_files/paper/2023/file/a627810151be4d13f907ac898ff7e948-Paper-Conference.pdf) |
-| `ZOAdam`      | MeZO with Adam's adaptive update                         |                                                                                                                                                                                                  |
-| `ZOSVRG`      | MeZO with stochastic variance-reduced gradients          | [Gautam et al., 2024, *Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models*](https://openreview.net/pdf?id=yc758jO4i5)                                                         |
-| `LOZO`        | Low-rank ZO gradient estimator                           | [Chen et al., 2025, *Enhancing Zeroth-Order Fine-Tuning for Language Models with Low-Rank Structures*](https://openreview.net/pdf?id=9BiVepgmWW)                                                 |
-| `HiZOO`       | Hessian informed ZO preconditioner                       | [Zhao et al., 2025, *Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer*](https://openreview.net/forum?id=bEqI61iBue)                                     |
-| `LOREN`(ours) | Low-Rank curvature-aware ZO with RLOO variance reduction | Seung et al., 2026, *Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning*                                                                                                        |
+| Algorithm     | Description                                         | Reference                                                                                                                                                                                        |
+|:--------------|:----------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ZO`          | Baseline memory-efficient ZO                        | [Malladi et al., 2023, *Fine-Tuning Language Models with Just Forward Passes*](https://proceedings.neurips.cc/paper_files/paper/2023/file/a627810151be4d13f907ac898ff7e948-Paper-Conference.pdf) |
+| `ZOAdam`      | MeZO with Adam's adaptive update                    |                                                                                                                                                                                                  |
+| `ZOSVRG`      | MeZO with stochastic variance-reduced gradients     | [Gautam et al., 2024, *Variance-reduced Zeroth-Order Methods for Fine-Tuning Language Models*](https://openreview.net/pdf?id=yc758jO4i5)                                                         |
+| `LOZO`        | Low-rank ZO gradient                                | [Chen et al., 2025, *Enhancing Zeroth-Order Fine-Tuning for Language Models with Low-Rank Structures*](https://openreview.net/pdf?id=9BiVepgmWW)                                                 |
+| `HiZOO`       | Hessian informed ZO                                 | [Zhao et al., 2025, *Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer*](https://openreview.net/forum?id=bEqI61iBue)                                     |
+| `LOREN`(ours) | Low-rank curvature-aware ZO with variance reduction | Seung et al., 2026, *Low-Rank Curvature for Zeroth-Order Optimization in LLM Fine-Tuning*                                                                                                        |
 
 ---
 
