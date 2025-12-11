@@ -25,11 +25,11 @@ local curvature. It combines:
 </p>
 
 <p align="center">
-  <img src="figures/opt13b_train_loss.png" alt="OPT13B" width="100%"/>
+  <img src="figures/opt13b_train_loss.png" alt="OPT13B" width="98%"/>
 </p>
 
 <p align="center">
-  Figure 2: Training loss curves for different ZO optimizers when fine-tuning OPT-13B on SuperGLUE (RTE, BoolQ, WiC, and CB) tasks.
+  Figure 2: Training loss curves for different ZO optimizers when fine-tuning OPT-13B on SuperGLUE tasks.
 </p>
 
 ---
