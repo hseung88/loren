@@ -16,8 +16,8 @@ local curvature. It combines:
 
 ### Benchmark Results
 <p align="center">
-  <img src="figures/gpt_qnli_acc.png" alt="GPT-2-XL QNLI" width="39.2%"/>
-  <img src="figures/opt13_cb_acc.png" alt="OPT-13B BoolQ" width="38%"/>
+  <img src="figures/gpt_qnli_acc.png" alt="GPT-2-XL QNLI" width="49.5%"/>
+  <img src="figures/opt13_cb_acc.png" alt="OPT-13B BoolQ" width="48%"/>
 </p>
 
 <p align="center">
@@ -25,10 +25,7 @@ local curvature. It combines:
 </p>
 
 <p align="center">
-  <img src="figures/opt13_rte.png" alt="OPT13B RTE" width="24.5%"/>
-  <img src="figures/opt13_boolq.png" alt="OPT13B BOOLQ" width="24.5%"/>
-  <img src="figures/opt13_wic.png" alt="OPT13B WIC" width="24.5%"/>
-  <img src="figures/opt13_cb.png" alt="OPT13B CB" width="24.5%"/>
+  <img src="figures/opt13b_train_loss.png" alt="OPT13B" width="90%"/>
 </p>
 
 <p align="center">
