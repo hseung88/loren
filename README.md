@@ -25,7 +25,7 @@ local curvature. It combines:
 </p>
 
 <p align="center">
-  <img src="figures/opt13b_train_loss.png" alt="OPT13B" width="90%"/>
+  <img src="figures/opt13b_train_loss.png" alt="OPT13B" width="100%"/>
 </p>
 
 <p align="center">
